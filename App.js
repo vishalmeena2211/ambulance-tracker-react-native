@@ -1,20 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import {Text, View} from 'react-native';
+import Map from './components/Map';
+// import sendPushNotifications from './components/sendPushNotification';
+import EntryNavigation from './components/pages/Navigations/EntryNavigation';
 
-export default function App() {
+const HelloWorldApp = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+   <>
+   {/* <Map/> */}
+   {/* <sendPushNotifications/> */}
+   <EntryNavigation/>
+   </>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+};
+export default HelloWorldApp;
